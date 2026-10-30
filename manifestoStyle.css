@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #2B2A21;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: -1.5%; /* Add a top margin to avoid content overlay */
+}
+
+/* Text Formatting */
+
+body {
+	font-family: "Doppio One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: #ffffc7;
+	margin: 0;
+	font-size: 25px;
+}
+
+p {
+	padding-left: 25px;
+}
+
+h1 {
+	font-family: "Caacupe One", sans-serif;
+	font-weight: 400;
+	font-size: 100px;
+	font-style: normal;
+	margin-top: -5px;
+	margin-bottom: -10px;
+}
+
+h2 {
+	padding-left: 25px;
+}
+
+h3 {
+	font-weight: 400;
+	font-style: italic;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+figcaption {
+	font-size: 20px;
+	font-style: italic;
+}
+
+/* Sections */
+
+section {
+	padding-left: 25px;
+}
+
+.hero {
+	background: linear-gradient(to bottom, #FFD700, #ffffc7);
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 25px;
+	text-align: center;
+}
+
+footer {
+	background: linear-gradient(to bottom, #ffffc7, #00ff73);
+	padding-top: 50px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	
+}
+
+/* Buttons & Links */
+
+button {
+	background-color: #FFD700;
+	color: #8f3e00;
+	padding: 10px;
+	border-radius: 10px;
+	width: 150px;
+	height: 50px;
+	border: none;
+	font-family: "Doppio One", sans-serif;
+	font-size: 20px;
+	margin: 10px
+}
+
+button:hover {
+	background-color: #ffffc7;
+	color: #ff6f00;
+	cursor: pointer;
+}
+
+a { 
+	color: forestgreen;
+}
+
+a:hover {
+	color: #6cd100;
+}
+
+/* Miscellaneous */
+
+img {
+	border-radius: 25px;
+}
+
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+}
+
+html {
+	scroll-behavior: smooth;
+}

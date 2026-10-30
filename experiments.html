@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lemonland Experimentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Doppio+One&family=Jim+Nightshade&display=swap" rel="stylesheet">
+<link href="sitestyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<div class="navbar">
+	<a href="index.html">About</a>
+	<a href="work.html">Work</a>
+	<a href="toolkit.html">Toolkit</a>
+	<a class="here">Experiments</a>
+</div>
+	
+<section class="hero">
+	<div style="margin-left: -50px; line-height: 1; position: absolute; text-align: left;">
+		<h1><i>...find</i></h1>
+		<h1 style="font-size: 200px"><i>more!</i></h1>
+	</div>
+	<img src="title_lemonade.png" width="500px" alt="A glass of lemonade." style="margin-left: 400px">
+</section>
+	
+<body>
+	<div style="text-align: center; display: flex; justify-content:center">
+		<img src="lemons_falling.png" width="400px" alt="Lemons." style="flex-shrink: 0; object-fit: contain">
+		<div style="width: 600px; flex-shrink: 0">
+			<h2 style="padding-left: 0px">~ here's a very clickable button ~</h2>
+			<button id="clickablebutton">free lemons for everyone</button>
+			<p style="padding-left: 0px">lemon donation counter:</p>
+			<h1 style="margin-top: -40px"><span id="counter">0</span></h1>
+			<h3 id="thankyou" style="padding-left: 0px; padding-bottom: 50px; color: #ffffe8">Thank you for your service!</h3>
+
+			<script>
+				let count = 0;
+
+				const counterDisplay = document.getElementById("counter");
+				const button = document.getElementById("clickablebutton")
+
+				button.addEventListener("click", () => {
+					count++;
+					counterDisplay.textContent = count;
+					document.getElementById("thankyou").style.color = "black";
+				});
+			</script>
+		</div>
+		<img src="lemons_falling.png" width="400px" alt="Lemons." style="flex-shrink: 0; object-fit: contain">
+	</div>
+	
+	<footer>
+	<h2>~ Contact Information</h2>
+	<p><i>Joshua DeGraff<br>
+	degraffjt@gmail.com<br>
+	(331) 707-7888</i></p>
+		
+	<h3>
+	This website was created by Joshua as a student project for ARTD 245: Web Design at North Central College in Naperville, IL, in 2026.
+	<br>All original graphics were created using Photoshop, Illustrator, or Procreate, and the site was hand-coded using HTML and CSS in Dreamweaver.
+	<br>Text content and design theory are adapted from Flux Academy, Tilda Education, and Dribbble articles.
+	</h3>
+	</footer>
+</body>
+</html>
